@@ -1,7 +1,7 @@
 name: Build My Application
 on: push
 
-Jobs:
+jobs:
   build:
     name: Build our App
     runs-on: ubuntu
@@ -9,10 +9,11 @@ Jobs:
       - name: Hello World
         uses: actions/hello-world-javascript@v1
         with:
-           who-to-greet: 'Mona the '
-           id: hello
-      - name: Print Current Directory
-         run: pwd
-      - name: List file in Directory
-         run: ls
+          who-to-greet: 'Mona the '
+          id: hello
 
+      - name: Print Current Directory
+        run: pwd
+
+      - name: List file in Directory
+        run: ls
