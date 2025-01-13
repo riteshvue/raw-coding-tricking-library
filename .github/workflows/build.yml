@@ -8,14 +8,15 @@ jobs:
     steps:
       - name: pull code
         uses: actions/checkout@v4
-      # - name: Hello World
-      #   uses: actions/hello-world-javascript@v1
-      #   with:
-      #     who-to-greet: 'Mona the Octocat'
-      #     id: hello
 
       - name: Print Current Directory
         run: pwd
 
       - name: List Files in Directory
         run: ls -al
+
+      - name: Check dotnet cli
+        run: dotnet
+
+      - name: check npm cli
+        run: npm -v
