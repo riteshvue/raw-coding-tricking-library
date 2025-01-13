@@ -6,6 +6,8 @@ jobs:
     name: Build our App
     runs-on: ubuntu-latest
     steps:
+      - name: pull code
+        uses: actions/checkout@v4
       # - name: Hello World
       #   uses: actions/hello-world-javascript@v1
       #   with:
