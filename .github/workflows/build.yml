@@ -18,8 +18,8 @@ jobs:
       - name: Check dotnet cli
         run: dotnet build
 
-      # - name: List Files in Directory
-      #   run: ls .\TrickingLibrary.API -r
+      - name: List Files in Directory
+        run: Get-ChildItem -Force | Format-List
 
       - name: check npm cli
         run: npm -v
