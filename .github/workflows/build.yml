@@ -6,11 +6,11 @@ jobs:
     name: Build our App
     runs-on: ubuntu-latest
     steps:
-      - name: Hello World
-        uses: actions/hello-world-javascript@v1
-        with:
-          who-to-greet: 'Mona the Octocat'
-          id: hello
+      # - name: Hello World
+      #   uses: actions/hello-world-javascript@v1
+      #   with:
+      #     who-to-greet: 'Mona the Octocat'
+      #     id: hello
 
       - name: Print Current Directory
         run: pwd
