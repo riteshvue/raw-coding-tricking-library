@@ -4,16 +4,16 @@ on: push
 jobs:
   build:
     name: Build our App
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - name: Hello World
         uses: actions/hello-world-javascript@v1
         with:
-          who-to-greet: 'Mona the '
+          who-to-greet: 'Mona the Octocat'
           id: hello
 
       - name: Print Current Directory
         run: pwd
 
-      - name: List file in Directory
-        run: ls
+      - name: List Files in Directory
+        run: ls -al
