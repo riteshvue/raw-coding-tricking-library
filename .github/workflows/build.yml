@@ -19,7 +19,7 @@ jobs:
         run: dotnet build
 
       - name: List Files in Directory
-        run: ls .\TrickingLibrary.API.csproj -r
+        run: ls .\TrickingLibrary.API -r
 
       - name: check npm cli
         run: npm -v
