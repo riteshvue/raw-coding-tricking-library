@@ -19,7 +19,7 @@ jobs:
         run: dotnet build
 
       - name: List Files in Directory
-        run: Get-ChildItem -Force | Format-List
+        run: ls -la
 
       - name: check npm cli
         run: npm -v
